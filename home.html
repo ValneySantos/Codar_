@@ -41,13 +41,13 @@
     </header>
 
     <section class="section-home section-container ">
-        <div class="content-block">
-            <div class="img-home content-block-item "></div>
+        <div class="content-block" onmouseout="funcOut()">
+            <div onmouseover="funcOver()" class="img-home content-block-item "></div>
             <div class="container-home content-block-item ">
                
                     <p>Criação de sites Personalizados</p>
                     <div class="title-home">Criação de Sites</div>
-                    <div class="button-home">Solicitar orçamento</div>
+                    <div class="button-home" onclick="funcClick()">Solicitar orçamento</div>
             </div>
         </div>
     </section>
@@ -120,8 +120,33 @@
             <div class="footer-block">
                 <iframe src="https://www.youtube.com/embed/hwyVMjCG_nc?autoplay=1" title=""></iframe>       
                 </div>
-                
         </div>
     </footer>
+    
 </body>
+<script>
+   function funcClick(){
+        alert("não estamos disponivel")
+    }
+   function funcOver(){
+    var target = document.querySelector('.button-home');
+var player = target.animate([
+  {transform: 'translate(0)'},
+  {transform: 'translate(40px, 0px)'}
+], 300);
+player.addEventListener('finish', function() {
+  target.style.transform = 'translate(50px, 0px)';
+});
+    }
+    function funcOut(){
+        var target = document.querySelector('.button-home');
+var player = target.animate([
+  {transform: 'translate(0)'},
+  {transform: 'translate(0px, 0px)'}
+], 500);
+player.addEventListener('finish', function() {
+  target.style.transform = 'translate(0px, 0px)';
+});
+    }
+</script>
 </html>
