@@ -1,0 +1,66 @@
+input{
+border: none;
+height: 40px;
+border: 1px solid rgb(177, 172, 172);
+padding: 0 10px;
+margin-top: 5px;
+border-radius: 5px;
+}
+input:focus{
+    border: 1px solid var(--main);
+    outline: none;
+}
+label{
+   font-weight: 400;
+   color: #aaa;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+input[type="submit"]{
+    margin: 0 auto;
+    border: none;
+   width:100px;
+   margin-top: 20px;
+   border-radius: 5px;
+}
+.section-contact{
+    margin: 50px auto;
+    max-width: 900px ;
+  
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+    padding: 30px;
+}
+.title-contact{
+    color: var(--main);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.text{
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    color: #aaa;
+}
+form{
+
+    
+    max-width: 90%;
+    margin: 0 auto;
+}
+.container-form{
+    
+}
+form.form .input-control{
+display: flex;
+flex-direction: column;
+justify-content: center;
+max-width: 950px;
+margin: 0 auto;
+margin-top: 20px;
+}
+form.form .input-control label{
+    margin-right: 10%;
+    }
