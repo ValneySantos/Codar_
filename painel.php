@@ -11,7 +11,8 @@
 
 <body>
     <form method="post" action="buscando.php">
-        E-mail: <input type="text" name="email"><br><br>
+        Pesquisar emails de usuários no database: 
+        <br><br>
         <input type="submit" value="Pesquisar">
     </form>
 </body>
