@@ -7,10 +7,10 @@
     <title>Login</title>
     <script type="text/javascript">
         function loginsus(){
-            setTimeout("window.location='page.php'", 2000);
+            setTimeout("window.location='busca.php'", 5000);
         }
         function loginfal(){
-            setTimeout("window.location='login.html'", 2000);
+            setTimeout("window.location='login.html'", 4000);
         }
     </script>
 </head>
