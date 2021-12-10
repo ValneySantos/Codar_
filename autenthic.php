@@ -7,7 +7,7 @@
     <title>Login</title>
     <script type="text/javascript">
         function loginsus(){
-            setTimeout("window.location='busca.php'", 5000);
+            setTimeout("window.location='painel.php'", 5000);
         }
         function loginfal(){
             setTimeout("window.location='login.html'", 4000);
