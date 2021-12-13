@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
-	<link rel="stylesheet" href="./styles/login.css">
+  <title></title>
+  <link rel="stylesheet" href="./styles/login.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <script>
+    function validacao(acao) {
+      if (document.loginform.name.value == "") {
+        alert("O campo ususario não pode ser vazio.");
+        document.loginform.name.focus();
+        return false;
+      }
+      if (document.loginform.email.value == "") {
+        alert("O campo ususario não pode ser vazio.");
+        document.loginform.email.focus();
+        return false;
+      }
+      if (document.loginform.senha.value.length < 6) {
+        alert("O campo senha não pode ter menos que 6 caracteres.");
+        document.loginform.senha.focus();
+        return false;
+      }
+      return acao
+    }
+  </script>
 </head>
+
 <body>
-<section class="section-contact ">
-  <form  class="form" name="loginform" method="POST" action="cadastrar.php">
-  <div class="">
-      <div class="input-control">
-        <label for="name">Nome:</label>
-        <input id="name" name="name" type="text" required placeholder="Nome...">
-        
-      </div>
-    <div class="">
-      <div class="input-control">
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="email" required placeholder="Email...">
-        
-      </div>
-      <div class="input-control">
-        <label for="senha">Senha:</label>
-        <input id="senha" name="senha" type="password" required placeholder="Senha...">
-      </div>
-    <div class="button">
-      <input type="submit" value="Cadastrar">
-  </form>
-</div>
-</section>
+  <section class="section-contact ">
+    <form class="form" name="loginform" method="POST" action="cadastrar.php" onsubmit="validacao(acao); return false;">
+      <div class="">
+        <div class="input-control">
+          <label for="name">Nome:</label>
+          <input id="name" name="name" type="text" required placeholder="Nome...">
+
+        </div>
+        <div class="">
+          <div class="input-control">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" required placeholder="Email...">
+
+          </div>
+          <div class="input-control">
+            <label for="senha">Senha:</label>
+            <input id="senha" name="senha" type="password" required placeholder="Senha...">
+          </div>
+          <div class="button">
+            <input type="submit" value="Cadastrar">
+    </form>
+    </div>
+  </section>
 
 </body>
+
 </html>

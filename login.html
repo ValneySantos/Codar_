@@ -7,21 +7,6 @@
   <link rel="stylesheet" href="./styles/login.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Contato</title>
-  <script>
-    function validacao(){
-        if(document.loginform.usuario.value == ""){
-            alert("O campo ususario não pode ser vazio.");
-            document.loginform.usuario.focus();
-            return false;
-        }
-        if(document.loginform.senha.value.length < 6 ){
-            alert("O campo senha não pode ter menos que 6 caracteres.");
-            document.loginform.senha.focus();
-            return false;
-        }
-    }
-</script>
-
 </head>
 <body>
   <header>
@@ -39,7 +24,7 @@
 <section class="section-contact ">
   <div class="title-contact">Será um prazer em atender você!</div>
   <p class="text">Preencha os campos abaixo e logo entraremos em contato contigo para esclarecer todas as dúvidas e solicitações</p>
-  <form action="autenthic.php" class="form" name="loginform" method="post" onsubmit="validacao(); return false;">
+  <form action="autenthic.php" class="form" name="loginform" method="post">
     <div class="">
       <div class="input-control">
         <label for="email">Email:</label>
