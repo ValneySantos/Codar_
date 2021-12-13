@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="./styles/login.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <script>
-    function validacao(acao) {
+    function validacao() {
       if (document.loginform.name.value == "") {
         alert("O campo ususario não pode ser vazio.");
         document.loginform.name.focus();
         return false;
       }
-      else if(document.loginform.email.value == "") {
+      else if (document.loginform.email.value == "") {
         alert("O campo ususario não pode ser vazio.");
         document.loginform.email.focus();
         return false;
@@ -22,14 +22,14 @@
         document.loginform.senha.focus();
         return false;
       }
-      return acao
+      return true;
     }
   </script>
 </head>
 
 <body>
   <section class="section-contact ">
-    <form class="form" name="loginform" method="POST" action="cadastrar.php" onsubmit="validacao(acao); return false;">
+    <form class="form" name="loginform" method="POST" action="cadastrar.php" onsubmit="return validacao();"> 
       <div class="">
         <div class="input-control">
           <label for="name">Nome:</label>
