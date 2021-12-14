@@ -8,5 +8,6 @@
 	$sql = mysqli_query($conexao, "INSERT INTO usuario (name, email, senha) VALUES ('$name','$email', '$senha')");
 
 	header('Location: login.html');
+	
 ?>
 
