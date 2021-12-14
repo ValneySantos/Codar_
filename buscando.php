@@ -14,6 +14,7 @@
 	// }else{
 	// 	echo "Usuario não encontrado!";
 	// }
+	
 	$sql = mysqli_query($conexao, "SELECT * FROM usuario");
 	while($exibe = mysqli_fetch_assoc($sql)){
   	echo $exibe['email'] .'<br>';
